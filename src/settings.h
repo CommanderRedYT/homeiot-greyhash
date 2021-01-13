@@ -10,7 +10,7 @@ Circuit: https://oshwlab.com/ccommanderred/homeiot-v2
     const char *password = ""; //WiFi Password
 
     //thinger.io
-    #define USERNAME "" //Get it from https://console.thinger.com/
+    #define USERNAME "" //Get it from https://console.thinger.io/
     #define DEVICE_ID ""
     #define DEVICE_CREDENTIAL ""
 
