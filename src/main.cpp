@@ -104,7 +104,7 @@ void irfunction(const String &function)
   if (enableIR == true)
   {
     //You can define your own IR-Functions in here
-    if (function == "187")
-      irsend.sendNEC(0x00000187);
+    if (function == "FUNC-NAME")
+      irsend.sendNEC(0x00000000);
   }
 }
