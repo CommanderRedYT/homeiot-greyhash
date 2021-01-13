@@ -1,7 +1,6 @@
 #include <Arduino.h>
 #include "settings.h"
 #include "include.h"
-#define bla "hu"
 int channel[] = {
     14,
     2,
@@ -36,10 +35,10 @@ void setup()
   for (int i = 0; i < 16; i++)
   {
     pinMode(channel[i], OUTPUT);
-    if(ACTIVE_HIGH == true)
-    digitalWrite(channel[i], LOW);
-    if(ACTIVE_HIGH == false)
-    digitalWrite(channel[i], HIGH);
+    if (ACTIVE_HIGH == true)
+      digitalWrite(channel[i], LOW);
+    if (ACTIVE_HIGH == false)
+      digitalWrite(channel[i], HIGH);
   }
   pinMode(SEND_PIN, OUTPUT);
   thing.add_wifi(ssid, password);
@@ -85,10 +84,10 @@ void loop()
   }
   for (int i = 0; i < 16; i++)
   {
-    if(ACTIVE_HIGH == true)
-    digitalWrite(channel[i], state[i]);
-    if(ACTIVE_HIGH == false)
-    digitalWrite(channel[i], !state[i]);
+    if (ACTIVE_HIGH == true)
+      digitalWrite(channel[i], state[i]);
+    if (ACTIVE_HIGH == false)
+      digitalWrite(channel[i], !state[i]);
   }
   counter++;
   if (counter == 50)
