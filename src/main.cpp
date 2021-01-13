@@ -69,6 +69,24 @@ void setup()
   thing["sendIR"] << [](pson &in) {
     irfunction(in);
   };
+  thing["state"] >> [](pson &out) {
+    out["1"] = state[0];
+    out["2"] = state[1];
+    out["3"] = state[2];
+    out["4"] = state[3];
+    out["5"] = state[4];
+    out["6"] = state[5];
+    out["7"] = state[6];
+    out["8"] = state[7];
+    out["9"] = state[8];   
+    out["10"] = state[9];
+    out["11"] = state[10];
+    out["12"] = state[11];
+    out["13"] = state[12];
+    out["14"] = state[13];
+    out["15"] = state[14];
+    out["16"] = state[15];
+  };
 }
 
 void loop()
